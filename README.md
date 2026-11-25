@@ -3,7 +3,7 @@
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/) [![React](https://img.shields.io/badge/react-%2320232a?style=for-the-badge&logo=react&logoColor=61dafb)](https://react.dev/) [![Vite](https://img.shields.io/badge/vite-%23646CFF?style=for-the-badge&logo=vite&logoColor=4f46e5)](https://vitejs.dev/) [![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery)](https://tanstack.com/query) [![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
 
 > 🚀 **Дипломный проект** — Профессия Веб-разработчик на PHP 3.0 от Skillbox  
-> ✨ SPA платформа на React + TypeScript
+> ✨ SPA платформа на React + TypeScript  
 > 🎓 [Сертификат об окончании курса](./public/docs/certificate-skillbox.pdf)
 
 ---
