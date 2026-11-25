@@ -1,0 +1,33 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 16px;
+  padding: 2px 8px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 133%;
+
+  &.S {
+    font-size: 12px;
+    padding: 2px 8px;
+  }
+
+  &.L {
+    font-size: 18px;
+    padding: 4px 12px;
+  }
+
+  &.high {
+    background: #a59400;
+  }
+  &.good {
+    background: #308e21;
+  }
+  &.medium {
+    background: #777;
+  }
+  &.low {
+    background: #c82020;
+  }
+}

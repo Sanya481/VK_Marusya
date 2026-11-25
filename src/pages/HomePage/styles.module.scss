@@ -1,0 +1,105 @@
+@use "../../app/styles/mixins.scss" as *;
+
+.topFilmsSection {
+  margin-bottom: 120px;
+
+  @media (max-width: 1280px) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.topFilmsContainer {
+  @include container;
+}
+
+.topFilmsTitle {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 64px;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+}
+
+.topFilmsListGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
+  gap: 64px 40px;
+
+  @media (max-width: 1280px) {
+    gap: 40px;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.topFilmsSwiper.topFilmsSwiper {
+  display: none;
+
+  @media (max-width: 480px) {
+    display: block;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .topFilmsSlide {
+    width: 224px;
+  }
+}
+
+.topFilmsItem {
+  position: relative;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.topFilmsLink {
+  display: flex;
+  box-shadow: 0 0 80px 0 rgba(255, 255, 255, 0.33);
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  aspect-ratio: 2 / 3;
+
+  @media (max-width: 480px) {
+    box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.33);
+  }
+}
+
+.topFilmsImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.topFilmsNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  border-radius: 50px;
+  padding: 8px 24px;
+  background: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: #6a5dc2;
+}

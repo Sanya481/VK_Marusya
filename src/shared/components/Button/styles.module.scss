@@ -1,0 +1,49 @@
+.button {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  color: #fff;
+  border-radius: 28px;
+
+  border: none;
+  margin: 0;
+  cursor: pointer;
+
+  // Цвет
+  &.primary {
+    background: #393b3c;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  &.secondary {
+    background: #67a5eb;
+  }
+
+  // Форма
+  &.withText {
+    padding: 16px 48px;
+  }
+
+  &.onlyIcon {
+    padding: 16px 22px;
+  }
+
+  &:hover {
+    filter: brightness(1.05);
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+  &:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none; // или просто opacity + cursor
+  }
+}

@@ -1,0 +1,42 @@
+# Сборка
+dist/
+build/
+
+# Зависимости
+node_modules/
+
+# Локальные переменные окружения
+.env
+.env.local
+.env.*.local
+
+# Логи
+*.log
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Файлы для обучения (комментарии к конфигам)
+.prettierrc.comments.json
+.editorconfig.comments
+
+# Сгенерированные файлы Orval
+src/shared/api/generated/
+
+# Сгенерированные React-компоненты для иконок
+src/assets/icons/
+
+# Кэш браузеров
+.cache/
+.tmp/
+
+# Промежуточные файлы
+*.tsbuildinfo
+.eslintcache

@@ -1,0 +1,199 @@
+@use "../../../../app/styles/mixins.scss" as *;
+
+.movieCardContainer {
+  @include container;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.movieCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 74px;
+
+  @media (max-width: 1024px) {
+    margin-top: 0;
+  }
+}
+
+.movieCardHeader {
+  margin-bottom: 44px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 0;
+  }
+}
+
+.movieCardTitle {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 117%;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
+}
+
+.movieCardSubtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 133%;
+  color: rgba(255, 255, 255, 0.7);
+
+  // Добавление трёх точек в конце для длинных текстов
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+
+    -webkit-line-clamp: 2;
+  }
+}
+
+.movieCardInfo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  order: -1;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: rgba(255, 255, 255, 0.7);
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    gap: 16px;
+  }
+}
+
+.movieCardGenres {
+  display: flex;
+  gap: 3px;
+
+  @media (max-width: 768px) {
+    & > :nth-child(n + 2) {
+      display: none;
+    }
+  }
+}
+
+.movieCardActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @media (max-width: 480px) {
+    justify-content: space-between;
+    gap: 10px 8px;
+  }
+}
+
+.movieCardTrailer {
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.movieCardTrailerBtn {
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.movieCardLink {
+  background: #67a5eb;
+  padding: 16px 48px;
+  display: flex;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  color: #fff;
+  border-radius: 28px;
+  background: #393b3c;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+
+  @media (max-width: 480px) {
+    padding: 16px 40px;
+  }
+}
+
+.favoriteBtn {
+  color: #393b3c;
+  stroke: #fff;
+  stroke-width: 2px;
+  .svg {
+    fill: #393b3c;
+  }
+  &.isFavorite {
+    color: #b4a9ff;
+    stroke: #b4a9ff;
+    .svg {
+      fill: #b4a9ff;
+    }
+  }
+}
+
+.refreshIcon {
+  &.spin {
+    animation: spin 1s linear infinite;
+    transform-origin: center center;
+  }
+}
+
+.movieCardImgWrapper {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 680px;
+  // max-height: 552px;
+  aspect-ratio: 680 / 552;
+
+  @media (max-width: 1280px) {
+    flex-shrink: 1;
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 100%;
+    order: -1;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 0;
+  }
+}
+
+.movieCardImg {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
