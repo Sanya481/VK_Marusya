@@ -4,6 +4,7 @@
 
 > 🚀 **Дипломный проект** — Профессия Веб-разработчик на PHP 3.0 от Skillbox  
 > ✨ SPA платформа на React + TypeScript
+> 🎓 [Сертификат об окончании курса](./public/docs/certificate-skillbox.pdf)
 
 ---
 
